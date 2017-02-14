@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/bg_search_edit"
+    android:focusable="true"
+	android:focusableInTouchMode="true" >
+
+    <!--<ImageView
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/search2"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/com_padding_medium_small"
+        android:layout_marginRight="@dimen/com_padding_medium_small"
+        android:layout_toLeftOf="@+id/btnSearch"
+        android:background="@null"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:minHeight="35dp"
+        android:singleLine="true"
+        android:textColor="#5F6062"
+        android:textSize="@dimen/com_textsize_medium" />-->
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="50dp"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:textColorHint="@color/text_hint"
+        android:hint="请输入城市名称/拼音代码"/>
+    <ImageView
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/search2"/>
+</RelativeLayout>

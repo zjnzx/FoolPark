@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/park_name_show4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#414141"
+        android:textSize="16sp"
+        android:text="111"/>
+    <TextView
+        android:id="@+id/park_addr_show4"
+        android:layout_below="@id/park_name_show4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#808080"
+        android:textSize="12sp"
+        android:text="111111"/>
+    <TextView
+        android:id="@+id/card_buy"
+        android:background="@drawable/bg_green_btn"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_width="52dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/green"
+        android:text="购买"/>
+</RelativeLayout>

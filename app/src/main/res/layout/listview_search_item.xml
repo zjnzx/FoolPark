@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_item"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+    <cn.com.fooltech.smartparking.view.CustomTextView
+        android:id="@+id/sear_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="人人网"/>
+    <TextView
+        android:id="@+id/sear_addr"
+        android:layout_below="@id/sear_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#a8a8a8"
+        android:text="上海市"/>
+    <TextView
+        android:id="@+id/sear_dist"
+        android:layout_below="@id/sear_name"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#a8a8a8"
+        android:text="m"/>
+</RelativeLayout>

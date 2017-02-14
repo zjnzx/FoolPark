@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:gravity="center_vertical"
+     >
+    <!-- 城市信息部分 -->
+    <TextView
+        android:id="@+id/download_status"
+        android:visibility="visible"
+        android:gravity="center_vertical"
+        android:background="#DEDEDE"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:paddingLeft="10dp"
+        android:text="正在下载"/>
+    <RelativeLayout
+        android:id="@+id/lyCityInfo"
+        android:background="@drawable/selector_item"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:minHeight="50dp"
+        android:visibility="visible" >
+        
+        <ImageView 
+            android:id="@+id/ivExpande"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_offline_u"
+            android:scaleType="centerInside"
+            />
+        
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/ivExpande"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:gravity="center_vertical"
+            android:text="已下载"
+            android:textColor="@color/red3"/>
+
+        <TextView
+            android:id="@+id/tvCityname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:textSize="16sp"
+            android:text="上海"/>
+        <TextView
+            android:id="@+id/tvSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tvCityname"
+            android:textColor="@color/gray"
+            android:text="30M"
+            />
+        <ProgressBar
+            android:id="@+id/pbDownload"
+            android:progressDrawable="@drawable/progress_drawable"
+            android:layout_alignParentBottom="true"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:max="100" />
+    </RelativeLayout>
+
+    <!-- 下载进度及管理部分 -->
+    <RelativeLayout
+        android:id="@+id/lyEditPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="visible"
+            android:orientation="horizontal"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dp">
+
+            <Button
+                android:id="@+id/btnDown"
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/selector_item5"
+                android:layout_height="@dimen/com_btn_h_medium"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="10dip"
+                android:minWidth="100dp"
+                android:text="下载"/>
+
+            <Button
+                android:id="@+id/btnRemove"
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/selector_item5"
+                android:layout_height="@dimen/com_btn_h_medium"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:minWidth="100dp"
+                android:text="删除"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

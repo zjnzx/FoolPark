@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/selector_item">
+
+    <TextView
+        android:id="@+id/tvProvince"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/com_padding_medium_small"
+        android:paddingRight="@dimen/com_padding_medium_small"
+        android:minHeight="@dimen/com_list_h_medium"
+        android:drawableRight="@drawable/ic_offline_d"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/tvType"
+        android:visibility="visible"
+        android:paddingLeft="@dimen/com_padding_medium_small"
+        android:gravity="center_vertical"
+        android:background="@color/background"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:text="热门城市"/>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="cn.com.fooltech.smartparking.activity.ActivityDetailActivity">
+
+    <RelativeLayout
+        android:id="@+id/lay_act"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_title_height"
+        android:background="@color/white">
+        <ImageView
+            android:id="@+id/back_act"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:background="@drawable/selector_item"
+            android:src="@drawable/back"/>
+        <TextView
+            android:id="@+id/title_act"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/activity_title"
+            android:textColor="@color/green"
+            android:text="积分活动"/>
+    </RelativeLayout>
+    <WebView
+        android:id="@+id/webView_act"
+        android:layout_below="@id/lay_act"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</RelativeLayout>

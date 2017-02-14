@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:search="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="cn.com.fooltech.smartparking.fragment.WholeCityFragment">
+
+    <RelativeLayout
+        android:id="@+id/lay_city_search"
+        android:layout_below="@id/lay_offline"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_gray2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="35dp"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:textColorHint="@color/text_hint"
+            android:hint="请输入城市名称/拼音代码"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/search2"/>
+    </RelativeLayout>
+    <!--<cn.com.fooltech.smartparking.offlinemap.utils.MySearchView
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textColorHint="@color/text_hint"
+        search:hint="请输入城市名称/拼音代码"
+        search:show_search_button="false" />-->
+    <View
+        android:id="@+id/offline_view"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/lay_city_search"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/text_empty"/>
+    <ExpandableListView
+        android:id="@+id/lv_city"
+        android:divider="@color/divider"
+        android:dividerHeight="1px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/offline_view"
+        android:cacheColorHint="#00000000" >
+    </ExpandableListView>
+    <ListView
+        android:id="@+id/lvSearchResult"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/offline_view"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <cn.com.fooltech.smartparking.view.ListViewPlus
+        android:id="@+id/lv_point"
+        android:divider="@color/divider"
+        android:dividerHeight="@dimen/line_height"
+        android:listSelector="@android:color/transparent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+    <TextView
+        android:id="@+id/empty_point"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/text_empty"
+        android:text="暂无积分明细"/>
+
+</FrameLayout>

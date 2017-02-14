@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="@drawable/selector_item"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+    <ImageView
+        android:id="@+id/search_img"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search1"/>
+    <TextView
+        android:id="@+id/sear_name_his"
+        android:layout_toRightOf="@id/search_img"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="m"/>
+</RelativeLayout>

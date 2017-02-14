@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="145dp">
+
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/listview_voucher_item"/>
+        <ImageView
+            android:id="@+id/voucher_checked"
+            android:layout_width="312dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:visibility="visible"
+            android:background="@drawable/voucher_checked"/>
+    </RelativeLayout>
+</RelativeLayout>

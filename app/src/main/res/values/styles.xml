@@ -1,0 +1,55 @@
+<resources>
+
+    <!-- Base application theme. android:Theme.Material.Light.NoActionBar,@android:style/Theme.Light.NoTitleBar-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="StartStyle" parent="AppTheme">
+        <item name="android:screenOrientation">portrait</item>
+        <item name="android:windowBackground">@drawable/splash</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+
+    <!--聚合点-->
+    <style name="Bubble.TextAppearance.Dark" parent="android:TextAppearance.Medium">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#ff7f7f7f</item>
+    </style>
+
+    <style name="Bubble.TextAppearance.Light" parent="Bubble.TextAppearance.Dark">
+        <item name="android:textColor">#ffeeeeee</item>
+    </style>
+
+    <style name="ClusterIcon.TextAppearance" parent="android:TextAppearance">
+        <item name="android:textColor">#ffeeeeee</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--popwindow-->
+    <style name="pop_sex_anim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/pop_in_anim</item>
+        <item name="android:windowExitAnimation">@anim/pop_out_anim</item>
+    </style>
+
+    <style name="Translucent" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+
+    <style name="ratingBarBig" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingbar_big</item>
+        <item name="android:minHeight">35dip</item>
+        <item name="android:maxHeight">35dip</item>
+    </style>
+    <style name="ratingBarSmall" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingbar_small</item>
+        <item name="android:minHeight">16dip</item>
+    </style>
+
+</resources>

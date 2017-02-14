@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/pop_voucher_lay"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:background="@color/background"
+        android:paddingBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ListView
+            android:id="@+id/lv_voucher_pop"
+            android:divider="@null"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"/>
+        <Button
+            android:id="@+id/btn_use"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/btn_long_width"
+            android:layout_height="@dimen/btn_long_heigh"
+            style="?android:attr/borderlessButtonStyle"
+            android:background="@drawable/selector_btn_click"
+            android:textColor="@color/text_button2"
+            android:textSize="@dimen/btn_text"
+            android:text="使用"/>
+    </LinearLayout>
+</RelativeLayout>
